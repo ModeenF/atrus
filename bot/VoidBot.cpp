@@ -9,6 +9,11 @@
 #define popen _popen
 #endif
 
+#ifndef WIN32
+#include <limits.h>
+#define MAX_PATH PATH_MAX
+#endif
+
 #include "User.h"
 
 #include "VoidBot.h"
