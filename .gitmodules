@@ -1,4 +1,0 @@
-[submodule "muscle"]
-	path = muscle
-	url = https://github.com/mtl1979/muscle.git
-	branch = master
