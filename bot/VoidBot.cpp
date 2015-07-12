@@ -1,7 +1,10 @@
 #include <time.h>
 
-#ifdef __BEOS__
-#include <be/kernel/OS.h>
+#ifdef __HAIKU__
+#include <OS.h>
+#ifndef MAX_PATH
+#define MAX_PATH 1024
+#endif
 #elif WIN32
 #define popen _popen
 #endif
